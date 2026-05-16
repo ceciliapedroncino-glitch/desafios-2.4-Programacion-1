@@ -1,0 +1,17 @@
+# 1. Definimos la temperatura base en Celsius
+celsius = 25.0  # Puedes cambiar este valor para probar otras temperaturas
+
+# 2. Realizamos los cálculos directamente en la asignación de variables
+fahrenheit = (celsius * 9 / 5) + 32
+kelvin = celsius + 273.15
+
+# --- Mostrar los resultados ---
+print(f"--- Convertidor de Temperatura ---")
+print(f"Temperatura en Celsius:    {celsius}°C")
+print(f"Temperatura en Fahrenheit: {fahrenheit}°F")
+print(f"Temperatura en Kelvin:     {kelvin} K")
+
+--- Convertidor de Temperatura ---
+Temperatura en Celsius:    25.0°C
+Temperatura en Fahrenheit: 77.0°F
+Temperatura en Kelvin:     298.15 K
