@@ -1,1 +1,31 @@
+def clasificar_numeros(a, b, c):
+    # Verificamos que los números sean distintos como pide el desafío
+    if a == b or b == c or a == c:
+        return "Por favor, introduce tres números que sean distintos."
 
+    # Evaluamos todas las combinaciones posibles usando comparaciones encadenadas y 'and'
+    if a < b < c:
+        orden = [a, b, c]
+    elif a < c < b:
+        orden = [a, c, b]
+    elif b < a < c:
+        orden = [b, a, c]
+    elif b < c < a:
+        orden = [b, c, a]
+    elif c < a < b:
+        orden = [c, a, b]
+    else:  # Esta opción cubre la última posibilidad: c < b < a
+        orden = [c, b, a]
+
+    return f"El orden ascendente es: {orden}"
+
+
+# --- Pruebas del algoritmo ---
+# Cambia estos valores para probar diferentes casos
+num1 = 45
+num2 = 12
+num3 = 89
+
+resultado = clasificar_numeros(num1, num2, num3)
+print(resultado)
+El orden ascendente es: [12, 45, 89]
